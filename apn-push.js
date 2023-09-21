@@ -24,6 +24,8 @@ notification.rawPayload = {
         }
     }
 };
+notification.pushType = "voip";
+notification.topic = "*yourBundleId*.voip";
 
 console.log(notification, " : notification-sdad_ad_AS");
 

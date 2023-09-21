@@ -8,7 +8,7 @@ let provider = new apn.Provider({
       keyId: "HH5BFZJZD4",
       teamId: "9U32ZT7NKJ"
     },
-    production: true // Set to true for production environment
+    production: false // Set to true for production environment
 });
 
 console.log(deviceToken, " : Device Token");

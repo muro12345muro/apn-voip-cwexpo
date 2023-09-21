@@ -16,7 +16,7 @@ console.log(deviceToken, " : Device Token");
 let notification = new apn.Notification();
 
 // Configure the raw payload for the notification
-notification.body = "Hello there!";
+//notification.body = "Hello there!";
 notification.payload = {
   "aps": {
         "alert": {
@@ -25,9 +25,9 @@ notification.payload = {
           "incoming_caller_name": "csadasdas",
         }
     },
-  "handle": "1111111",
-  "callerName": "Richard Feynman",
-  "uuid": "f46bfa0d-a0f7-4db0-990e-f3730342650f"
+ // "handle": "1111111",
+ // "callerName": "Richard Feynman",
+ // "uuid": "f46bfa0d-a0f7-4db0-990e-f3730342650f"
 };
 notification.pushType = "voip";
 notification.topic = "com.mydoup.application.voip";

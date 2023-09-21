@@ -5,7 +5,7 @@ var deviceToken = "5b9aa01e8ec8214f1d7e570ee84d66936bd7af8a13eeaa455b6cbaab5c5aa
 let provider = new apn.Provider({
     token: {
       key: "AuthKey_HH5BFZJZD4.p8",
-      //keyId: "HH5BFZJZD4",
+      keyId: "HH5BFZJZD4",
       teamId: "9U32ZT7NKJ"
     },
     production: false // Set to true for production environment

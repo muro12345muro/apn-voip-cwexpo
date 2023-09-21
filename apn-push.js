@@ -8,7 +8,7 @@ let provider = new apn.Provider({
       keyId: "HH5BFZJZD4",
       teamId: "9U32ZT7NKJ"
     },
-    production: false // Set to true for production environment
+    production: true // Set to true for production environment
 });
 
 console.log(deviceToken, " : Device Token");
@@ -26,6 +26,7 @@ notification.rawPayload = {
 
 notification.pushType = "voip";
 notification.topic = "com.mydoup.application.voip";
+
 
 console.log(notification, " : Notification Payload");
 

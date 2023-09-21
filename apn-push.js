@@ -11,6 +11,8 @@ let provider = new apn.Provider(
         production: false
     });
 console.log(deviceToken, " : sdad_ad_AS");
+
+
 let notification = new apn.Notification();
 notification.rawPayload = {
     "aps": {
@@ -23,6 +25,13 @@ notification.rawPayload = {
 };
 notification.pushType = "voip";
 notification.topic = "com.mydoup.application.voip";
+
+notification.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
+notification.badge = 3;
+notification.sound = "ping.aiff";
+notification.alert = "\uD83D\uDCE7 \u2709 You have a new message";
+notification.payload = {'messageFrom': 'John Appleseed'};
+notification.topic = "com.mydoup.application";
 
 
 provider.send(notification, deviceToken).then((err, result) => {

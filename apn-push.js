@@ -1,5 +1,5 @@
 var apn = require("apn");
-var deviceToken = process.env.APN_KEY;
+var deviceToken = "5b9aa01e8ec8214f1d7e570ee84d66936bd7af8a13eeaa455b6cbaab5c5aa5fc";
 
 let provider = new apn.Provider( 
     {

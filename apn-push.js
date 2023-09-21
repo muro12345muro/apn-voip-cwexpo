@@ -25,7 +25,7 @@ notification.rawPayload = {
     }
 };
 notification.pushType = "voip";
-notification.topic = "*yourBundleId*.voip";
+notification.topic = "com.mydoup.application.voip";
 
 console.log(notification, " : notification-sdad_ad_AS");
 

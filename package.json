@@ -1,5 +1,14 @@
 {
+  "main": "node apn-push.js",
+  "name": "apn-pack",
+  "version": "1.0.0",
   "scripts": {
-    "start": "node apn-push.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "apn": "^2.2.0"
   }
 }

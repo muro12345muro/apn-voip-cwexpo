@@ -1,5 +1,5 @@
 var apn = require("apn");
-var deviceToken = "5b9aa01e8ec8214f1d7e570ee84d66936bd7af8a13eeaa455b6cbaab5c5aa5fc";
+var deviceToken = "cQHoFp1ej0yZgpKEFiLeXe:APA91bGP3JsFzjL3FekTWhB91lEfJWIC1pJw85hAqN5i8Mu3Q_2VMr6wGiIxKT_nYdeAwsQMkqhnylHUvfxLU-REv1TzLQVs7ERgg6rWmPBZiOxwnHssEuHX_3m5e30m3V1hEsZ-mtFM";
 
 let provider = new apn.Provider( 
     {

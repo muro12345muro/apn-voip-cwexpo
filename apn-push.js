@@ -18,7 +18,6 @@ let notification = new apn.Notification();
 
 // Configure the raw payload for the notification
 notification.body = "Hello there!";
-notification.topic = "my.bundleid.voip";   // Make sure to append .voip here!
 notification.payload = {
   "aps": { "content-available": 1 },
   "handle": "1111111",

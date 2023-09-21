@@ -18,7 +18,13 @@ let notification = new apn.Notification();
 // Configure the raw payload for the notification
 notification.body = "Hello there!";
 notification.payload = {
-  "aps": { "content-available": 1 },
+  "aps": {
+        "alert": {
+          "uuid": "f46bfa0d-a0f7-4db0-990e-f3730342650f",
+          "incoming_caller_id": "213123123123",
+          "incoming_caller_name": "csadasdas",
+        }
+    },
   "handle": "1111111",
   "callerName": "Richard Feynman",
   "uuid": "f46bfa0d-a0f7-4db0-990e-f3730342650f"

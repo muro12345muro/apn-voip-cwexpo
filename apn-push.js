@@ -10,7 +10,7 @@ let provider = new apn.Provider(
         },
         production: false
     });
-
+console.log(deviceToken, " : sdad_ad_AS");
 let notification = new apn.Notification();
 notification.rawPayload = {
     "aps": {

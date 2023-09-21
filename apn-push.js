@@ -15,14 +15,17 @@ console.log(deviceToken, " : sdad_ad_AS");
 
 let notification = new apn.Notification();
 
+notification.rawPayload = {
+    "aps": {
+        "alert": {
+            "uuid": "32323232323",
+            "incoming_caller_id": "123456789",
+            "incoming_caller_name": "Tester",
+        }
+    }
+};
 
-notification.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
-notification.badge = 3;
-notification.sound = "ping.aiff";
-notification.alert = "\uD83D\uDCE7 \u2709 You have a new message";
-notification.payload = {'messageFrom': 'John Appleseed'};
-
-
+console.log(notification, " : notification-sdad_ad_AS");
 
 provider.send(notification, deviceToken).then((err, result) => {
     if (err) return console.log(JSON.stringify(err));

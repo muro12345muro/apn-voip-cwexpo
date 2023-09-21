@@ -17,14 +17,13 @@ console.log(deviceToken, " : Device Token");
 let notification = new apn.Notification();
 
 // Configure the raw payload for the notification
-notification.rawPayload = {
-  "aps": {
-    "alert": {
-      "uuid": "32323232323",
-      "incoming_caller_id": "123456789",
-      "incoming_caller_name": "Tester",
-    }
-  }
+notification.body = "Hello there!";
+notification.topic = "my.bundleid.voip";   // Make sure to append .voip here!
+notification.payload = {
+  "aps": { "content-available": 1 },
+  "handle": "1111111",
+  "callerName": "Richard Feynman",
+  "uuid": uuidv4()
 };
 notification.pushType = "voip";
 notification.topic = "com.mydoup.application.voip";

@@ -3,9 +3,9 @@ var deviceToken = "*yourDeviceToken*";
 let provider = new apn.Provider( 
     {
         token: {
-            key: "*yourAuthKey.p8*",
-            keyId: "*yourKeyId*",
-            teamId: "*yourTeamId*"
+            key: "AuthKey_HH5BFZJZD4.p8",
+            keyId: "HH5BFZJZD4",
+            teamId: "9U32ZT7NKJ"
         },
         production: false
     });

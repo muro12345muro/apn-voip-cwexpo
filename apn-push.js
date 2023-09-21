@@ -23,7 +23,7 @@ notification.payload = {
   "aps": { "content-available": 1 },
   "handle": "1111111",
   "callerName": "Richard Feynman",
-  "uuid": uuidv4()
+  "uuid": "f46bfa0d-a0f7-4db0-990e-f3730342650f"
 };
 notification.pushType = "voip";
 notification.topic = "com.mydoup.application.voip";

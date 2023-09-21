@@ -17,7 +17,7 @@ let notification = new apn.Notification();
 notification.rawPayload = {
     "aps": {
         "alert": {
-            "uuid": "*yourUuid*",
+            "uuid": "96ad24fa-dc58-4ab0-a0b4-42b44bb5973e",
             "incoming_caller_id": "123456789",
             "incoming_caller_name": "Tester",
         }

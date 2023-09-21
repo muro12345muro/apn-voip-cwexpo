@@ -14,17 +14,7 @@ console.log(deviceToken, " : sdad_ad_AS");
 
 
 let notification = new apn.Notification();
-notification.rawPayload = {
-    "aps": {
-        "alert": {
-            "uuid": "*yourUuid*",
-            "incoming_caller_id": "123456789",
-            "incoming_caller_name": "Tester",
-        }
-    }
-};
-notification.pushType = "voip";
-notification.topic = "com.mydoup.application.voip";
+
 
 notification.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
 notification.badge = 3;

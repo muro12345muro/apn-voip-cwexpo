@@ -21,7 +21,7 @@ notification.badge = 3;
 notification.sound = "ping.aiff";
 notification.alert = "\uD83D\uDCE7 \u2709 You have a new message";
 notification.payload = {'messageFrom': 'John Appleseed'};
-notification.topic = "com.mydoup.application";
+
 
 
 provider.send(notification, deviceToken).then((err, result) => {

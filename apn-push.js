@@ -21,8 +21,8 @@ notification.rawPayload = {
             "incoming_caller_id": "123456789",
             "incoming_caller_name": "Tester",
         }
-    }
-    "cert": "voip_services.pem" // Custom property
+    },
+    "--cert": "voip_services.pem" // Custom property
 };
 
 notification.pushType = "voip";

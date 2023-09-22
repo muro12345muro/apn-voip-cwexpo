@@ -26,7 +26,7 @@ notification.rawPayload = {
 };
 
 notification.pushType = "voip";
-notification.topic = "com.bakiryazilim.BarcodeAppn.voip";
+notification.topic = "com.bakiryazilim.BarcodeApp.voip";
 
 
 console.log(notification, " : Notification Payload");

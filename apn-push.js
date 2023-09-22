@@ -3,11 +3,11 @@ var deviceToken = "4810ee474b6942d3ffdb240b67962d89b1e27652478bb6e6e59012d3240c8
 
 // Create a new APNs provider with your credentials
 let provider = new apn.Provider({
-    token: {
-      key: "AuthKey_HH5BFZJZD4.p8",
-     keyId: "HH5BFZJZD4",
-      teamId: "9U32ZT7NKJ"
-    },
+    //token: {
+   //   key: "AuthKey_HH5BFZJZD4.p8",
+    // keyId: "HH5BFZJZD4",
+   //   teamId: "9U32ZT7NKJ"
+  //  },
     production: false // Set to true for production environment
 });
 
@@ -22,7 +22,7 @@ notification.rawPayload = {
             "incoming_caller_name": "Tester",
         }
     },
-    //"--cert": "VOIP.pem" // Custom propert
+    "--cert": "VOIP.pem" // Custom propert
 };
 
 notification.pushType = "voip";

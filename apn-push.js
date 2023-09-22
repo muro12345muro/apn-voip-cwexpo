@@ -22,7 +22,7 @@ notification.rawPayload = {
             "incoming_caller_name": "Tester",
         }
     },
-    "--cert": "VOIP.pem" // Custom propert
+    //"--cert": "VOIP.pem" // Custom propert
 };
 
 notification.pushType = "voip";
